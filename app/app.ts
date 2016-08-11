@@ -6,8 +6,7 @@ import {Settings} from './providers/settings';
 
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>',
-  providers: [Settings]
+  template: '<ion-nav [root]="rootPage"></ion-nav>'
 })
 export class MyApp {
 
@@ -38,4 +37,4 @@ export class MyApp {
 
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [Settings]);

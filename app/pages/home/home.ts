@@ -9,13 +9,13 @@ export class HomePage {
   constructor(private navCtrl: NavController, private popoverCtrl: PopoverController) {
 
   }
-  popoverShow(ev) {
+  popoverShow(myEvent) {
     this.pop = this.popoverCtrl.create(PopoverPage, {
     }, {
         cssClass: 'tinder-filtres'
       })
     this.pop.present({
-      ev
+      ev: myEvent
     })
   }
 }
